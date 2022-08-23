@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+
+set -e
+
+bs_help() {
+  bs_name=${0##*/}
+  echo "
+$bs_name
+Bulma Server
+Version: 0.0.1
+https://github.com/blitterated/
+Usage: $bs_name [command]
+Commands:
+  run      Run a bulma server container
+  build    Build a bulma server image
+  *        Help
+"
+  exit 1
+}
+
+# ensure a command was provided
+[[ $# -eq 0 ]] && bs_help
+
+# grab the command and pop it off the arguments
+CMD=$1
+shift
+
+case "$CMD" in
+  run)
+    docker run -it --rm --init \
+               -v "$(pwd)/src":/bulma-server/src \
+               -w /bulma-server \
+               -p 8080:8080 \
+               bulma-server
+    ;;
+  build)
+    docker build -t bulma-server .
+    ;;
+  *|"")
+    bs_help
+    ;;
+esac
+

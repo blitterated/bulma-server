@@ -1,0 +1,12 @@
+# Ignore .DS_store file on Mac
+.DS_Store
+
+# Ignore vim swap files
+*.swo
+*.swp
+
+# Not needed here
+package-lock.json
+
+# Don't save custom Sass changes
+src/css/*.css
