@@ -9,11 +9,6 @@ const sassFile = `${siteRoot}${process.argv[2]}`;
 const cssFile  = `${siteRoot}${process.argv[3]}`;
 const nodeModulesPath  = `${process.cwd()}/node_modules/`;
 
-console.log(`siteRoot: ${siteRoot}`);
-console.log(`sassFile: ${sassFile}`);
-console.log(`cssFile: ${cssFile}`);
-console.log(`nodeModulesPath: ${nodeModulesPath}`);
-
 function buildSass() {
   const compileResult = sass.compile(
     sassFile,
@@ -21,8 +16,6 @@ function buildSass() {
       loadPaths: [nodeModulesPath],
       sourceMap: false,
     });
-
-  //console.log(`cssResult:\n${compileResult.css}`);
 
   writeFileSync(cssFile, compileResult.css, "utf8");
 }
