@@ -37,6 +37,8 @@ I opted to only use syncronous methods for the sake of speed. It's [`recommended
 > ⚠️ Heads up!
 > When using Dart Sass, __compile is almost twice as fast as compileAsync__, due to the overhead of making the entire evaluation process asynchronous.
 
+The `index.html` source code comes from the[Bulma CSS Framework Crash Course](https://www.youtube.com/watch?v=IiPQYQT2-wg) on YouTube.
+
 ## References
 
 * live-server
@@ -51,4 +53,4 @@ I opted to only use syncronous methods for the sake of speed. It's [`recommended
   * [npm: concurrently](https://www.npmjs.com/package/concurrently)
 * [Use the Dart Sass JavaScript Implementation to Compile SASS with Node.js](https://www.devextent.com/dart-sass-javascript-implementation-npm-compile-sass/)
 * [CommonJS vs. ES modules in Node.js](https://blog.logrocket.com/commonjs-vs-es-modules-node-js/)
-
+* [Bulma CSS Framework Crash Course](https://www.youtube.com/watch?v=IiPQYQT2-wg)
