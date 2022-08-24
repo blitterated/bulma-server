@@ -3,13 +3,13 @@
   "type": "module",
   "version": "0.0.1",
   "description": "bulma hot/live reload server in docker, made from javscript glue",
+  "homepage": "https://github.com/blitterated/bulma-server",
+  "author": "blitterated",
+  "license": "0BSD",
   "main": "src/index.html",
   "scripts": {
     "dev": "node sassinate.js sass/mystyles.scss css/mystyles.css"
   },
-  "keywords": [],
-  "author": "blitterated",
-  "license": "0BSD",
   "devDependencies": {
     "bulma": "^0.9.4",
     "alive-server": "^1.2.9",

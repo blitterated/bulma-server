@@ -8,7 +8,7 @@ bs_help() {
 $bs_name
 Bulma Server
 Version: 0.0.1
-https://github.com/blitterated/
+https://github.com/blitterated/bulma-server
 Usage: $bs_name [command]
 Commands:
   run      Run a bulma server container
