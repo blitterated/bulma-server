@@ -1,4 +1,4 @@
-I was playing around with different bundlers in Docker trying to find a quick way to test Bulma customizations. Most bundlers (except Vite) are too slow. A few are on their way out, and one is simply abandoned (snowpack). Eventually, I became curious about how live/hot reloading works, and I wanted to try rolling my own. Turns out it's pretty easy with a little javascript glue.
+Eventually, after trying the different bundlers' reload functionality, I became curious about how live/hot reloading works, and I wanted to try rolling my own. Turns out it's pretty easy with a little javascript glue.
 
 ## Usage
 
