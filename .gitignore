@@ -4,3 +4,9 @@
 # Ignore vim swap files
 *.swo
 *.swp
+
+# No node_modules
+node_modules
+
+# Ignore build folders
+dist
