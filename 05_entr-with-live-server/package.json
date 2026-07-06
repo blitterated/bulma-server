@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "bulma": "^0.9.4",
+    "live-server": "^1.2.2"
+  }
+}
