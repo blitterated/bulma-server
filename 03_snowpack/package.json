@@ -1,0 +1,19 @@
+{
+  "name": "bulma-snowpack-docker",
+  "version": "0.0.1",
+  "description": "bulma snowpack live reload in docker",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "snowpack build",
+    "server": "snowpack dev"
+  },
+  "keywords": [],
+  "author": "blitterated",
+  "license": "0BSD",
+  "devDependencies": {
+    "@snowpack/plugin-sass": "^1.4.0",
+    "bulma": "^0.9.4",
+    "snowpack": "^3.8.8"
+  }
+}
